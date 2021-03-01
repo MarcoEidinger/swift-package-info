@@ -3,29 +3,29 @@
     "pins": [
       {
         "package": "llbuild",
-        "repositoryURL": "https://github.com/apple/swift-llbuild.git",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/swift-llbuild.git",
         "state": {
           "branch": null,
-          "revision": "fb7ebf0b06c0d7c45ca8e18b3371424503a38b5c",
-          "version": "0.3.0"
+          "revision": "ef2e9ba657fd0a4e6e25fff05051b328bf27aeaf",
+          "version": "0.50302.0"
         }
       },
       {
         "package": "SwiftPM",
-        "repositoryURL": "https://github.com/apple/swift-package-manager.git",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/swift-package-manager.git",
         "state": {
           "branch": null,
-          "revision": "f5ea3972d7d6c574e8bb16a19b2a7bca98ea131b",
-          "version": "0.6.0"
+          "revision": "86462d782b5c4546ad1dfeb8e6fc3ca05d6ccd61",
+          "version": "0.50302.0"
         }
       },
       {
         "package": "swift-tools-support-core",
-        "repositoryURL": "https://github.com/apple/swift-tools-support-core.git",
+        "repositoryURL": "https://github.com/SDGGiesbrecht/swift-tools-support-core.git",
         "state": {
           "branch": null,
-          "revision": "98a5916a811fcaaed770f1ed812e9405be762945",
-          "version": "0.1.0"
+          "revision": "8c3dfd42a36d0416345143eae4567d9314c12246",
+          "version": "0.50302.0"
         }
       }
     ]

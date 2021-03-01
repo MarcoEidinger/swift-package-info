@@ -1,9 +1,27 @@
 # swift-package-info
 Sample package built on top of libSwiftPM (inspired by https://github.com/apple/swift-package-manager/tree/main/Examples/package-info)
 
-Build error
+## Why using a fork of apple/swift-package-manager ?
+
+> Each tagged release of SwiftPM has to be used with a particular corresponding toolchain. The latest release is compatible with Swift 5.2. When Swift 5.3 was released, SwiftPM never had a version tagged
+
+Source: https://forums.swift.org/t/using-swiftpm-as-package-dependency/45201
+
+So the fork
+
+```Swift
+.package(name: "SwiftPM", url: "https://github.com/SDGGiesbrecht/swift-package-manager.git", .exact("0.50302.0")),
+```
+
+is used to avoid build error
 
 ![BuildError](./buildError.png)
+
+which otherwise would occur when using
+
+```Swift
+.package(name: "SwiftPM", url: "https://github.com/apple/swift-package-manager.git", .exact("0.6.0"))
+```
 
 for 
 
