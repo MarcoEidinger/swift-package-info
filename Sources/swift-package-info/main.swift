@@ -49,3 +49,13 @@ print("Total number of source files (including dependencies):", numberOfFiles)
 
 let numberOfOwnFiles = graph.reachableTargets.filter({ executables.contains($0.name) }).reduce(0, { $0 + $1.sources.paths.count })
 print("Total number of source files (no dependencies):", numberOfOwnFiles)
+
+// ========
+print("Reading Package.swift from \(packagePath.asURL.path):")
+do {
+    let manifestAsString = try String(contentsOfFile: packagePath.asURL.path.appending("/Package.swift"))
+    print(manifestAsString)
+    print("========")
+} catch {
+    print("Error")
+}
